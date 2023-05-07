@@ -16,7 +16,7 @@ jobs:
         run: dotnet restore AccountMS/AccountMS.sln
         
       - name: Build project
-        run: dotnet build AccountMS/AccountMS/AccountMS.csproj
+        run: dotnet build --no-restore AccountMS/AccountMS/AccountMS.csproj
 
       - name: Run tests
         run: dotnet test --no-restore AccountMS/AccountMS.sln
