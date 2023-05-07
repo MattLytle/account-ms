@@ -25,7 +25,6 @@ namespace AccountMS
                 });
             }
 
-            // TODO replace this later for a proper health check
             app.MapGet("/health", () => "ok");
 
             app.UseHttpsRedirection();
